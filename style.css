@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: hsl(210, 46%, 95%);
+  height: 100%;
+  width: 100%;
+  font-size: 13px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+.card {
+  width: 335px;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px hsla(217, 19%, 35%, 0.3);
+}
+
+.card1 {
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-position: top right 15%;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-color: hsl(263, 55%, 52%);
+    color: #fff;
+}
+
+.card2 {
+  background-color: hsl(217, 19%, 35%);
+  color: #fff;
+}
+
+.card3,
+.card5 {
+  color: hsl(217, 19%, 35%);
+}
+
+.card4 {
+  color: #fff;
+  background-color: hsl(219, 29%, 14%);
+}
+
+.card > div {
+  margin-bottom: 20px;
+}
+
+.card-header {
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  align-items: center;
+}
+
+.paragraph {
+  max-width: 33ch;
+}
+
+.img {
+  border-radius: 50%;
+  padding: 0 4px;
+}
+
+.name,
+.paragraph1 {
+  font-weight: 600;
+}
+
+.paragraph1 {
+  font-size: 18px;
+}
+
+.status {
+  opacity: 50%;
+  font-weight: 500;
+}
+
+.paragraph2 {
+  opacity: 70%;
+  font-weight: 500;
+}
+
+@media (min-width: 768px){
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 50px;
+  }
+
+  .card {
+    width: 100%;
+    margin:  0;
+    padding: 30px;
+  }
+
+  .paragraph {
+    max-width: none;
+  }
+
+  .paragraph1 {
+    line-height: 1.1;
+  }
+
+  .paragraph2 {
+    line-height: 1.4;
+  }
+
+  .card1 {
+    grid-column: 1 / 3;
+  }
+  .card3 {
+    grid-column: 1 / 2;
+  }
+
+  .card4 {
+    grid-column: 2 / 4;
+  }
+
+  .card5 {
+    grid-column: 4 / -1;
+    grid-row: 1 / span 2;
+  }
+
+  .name {
+    font-size: 20px;
+  }
+
+  .status {
+    font-size: 16px;
+  }
+
+  .paragraph1 {
+    font-size: 18px;
+  }
+
+  .paragraph2 {
+    font-size: 16px;
+  }
+
+  .card-header {
+    display: grid;
+    grid-template-columns: 84px 1fr;
+    align-items: center;
+  }
+
+  .img {
+    padding: 0 10px;
+  }
+
+}
