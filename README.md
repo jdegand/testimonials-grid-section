@@ -49,3 +49,4 @@ Users should be able to:
 ### Useful resources
 
 - [CSS Grid](https://cssgrid.io/) - Wes Bos free grid course
+- [CSS Tricks](https://css-tricks.com/dont-overthink-it-grids/) - Grid
